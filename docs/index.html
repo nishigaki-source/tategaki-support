@@ -46,6 +46,7 @@
   <tr><th>情報</th><th>目的</th><th>取り扱い</th></tr>
   <tr><td>開いている Google ドキュメントの本文と文書名</td><td>縦書きで表示するため</td><td>ブラウザ内のメモリ上でのみ処理し、保存・送信しません。サイドパネルを閉じるか、別の文書に移ると破棄されます</td></tr>
   <tr><td>Google ドキュメント上でキー入力・貼り付けなどの操作が「あった」という事実</td><td>文書の更新を検知して、縦書き表示を最新にするため</td><td>どのキーが押されたか、何が入力されたかは読み取りません。操作があったことだけを使います</td></tr>
+  <tr><td>文書のカーソルの位置（何ページ目の、どの高さにあるか）と、ページの大きさ</td><td>編集している場所を縦書きの画面にも表示するため。また、縦書きの画面で選んだ場所へ文書の表示位置を合わせるため</td><td>ブラウザ内で使うだけで、保存・送信しません</td></tr>
 </table>
 <p>文書の本文は、お使いの Google アカウントでログインしているブラウザの権限で、その文書を開いているタブから <code>docs.google.com</code> に対して取得します（Google ドキュメントの「HTML としてダウンロード」と同じ仕組みです）。本拡張機能は文書を読み取るだけで、変更しません。縦書きの画面で場所を選んだときは、Google ドキュメントの表示位置（スクロール）だけを動かします。</p>
 
@@ -96,6 +97,7 @@
   <tr><th>Information</th><th>Purpose</th><th>Handling</th></tr>
   <tr><td>Text and title of the Google Docs document you have open</td><td>To display it in vertical writing</td><td>Processed in browser memory only; never stored or sent. Discarded when you close the side panel or switch to another document</td></tr>
   <tr><td>The fact that a key press, paste, etc. happened on the Google Docs page</td><td>To detect that the document changed and keep the view up to date</td><td>The Extension does not read which keys were pressed or what was typed; it uses only the fact that an action happened</td></tr>
+  <tr><td>The position of the document cursor (which page, and how far down the page) and the page size</td><td>To show the place you are editing in the vertical view, and to scroll the document to a location picked in the vertical view</td><td>Used inside the browser only; never stored or sent</td></tr>
 </table>
 <p>The document text is fetched from <code>docs.google.com</code> by the tab that has the document open, using your browser's existing Google sign-in (the same mechanism as Google Docs' "Download as HTML"). The Extension only reads the document and never modifies it. When you pick a location in the vertical view, it only scrolls the Google Docs view to that location.</p>
 
