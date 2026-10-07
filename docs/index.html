@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー / Privacy Policy — 縦書き for Google ドキュメント</title>
+<style>
+  :root { color-scheme: light dark; --fg: #2b2a27; --muted: #6b675e; --line: #d9d5cb; --bg: #fbf9f4; --accent: #9a3b2e; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6e3dc; --muted: #a7a398; --line: #3a3b3f; --bg: #1f2023; --accent: #e08a75; } }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 24px 0 4px; }
+  .meta, nav { color: var(--muted); font-size: 14px; }
+  nav a { margin-right: 12px; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0; }
+  th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  ul { padding-left: 1.4em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>縦書き for Google ドキュメント — プライバシーポリシー</h1>
+<p class="meta">Privacy Policy / 最終更新日 Last updated: 2026-10-07</p>
+<nav><a href="#ja">日本語</a><a href="#en">English</a></nav>
+
+<section id="ja" lang="ja">
+<h2>日本語</h2>
+<p>「縦書き for Google ドキュメント」（以下「本拡張機能」）は、Google ドキュメントの文書を縦書き・原稿用紙の形式でサイドパネルに表示する Chrome 拡張機能です。本ポリシーは、本拡張機能が扱う情報と、その使い方を説明します。</p>
+<p>提供者: ロケット団合同会社（Rocket Dang LLC）</p>
+
+<h3>要点</h3>
+<ul>
+  <li>文書の内容は、お使いのブラウザの中だけで処理します。<strong>提供者のサーバーや第三者へ送信しません。</strong></li>
+  <li>アクセス解析、広告、トラッキングは一切行いません。</li>
+  <li>保存するのは、画面の設定（用紙の種類・書体など）だけです。文書の内容は保存しません。</li>
+</ul>
+
+<h3>本拡張機能が読み取る情報</h3>
+<table>
+  <tr><th>情報</th><th>目的</th><th>取り扱い</th></tr>
+  <tr><td>開いている Google ドキュメントの本文と文書名</td><td>縦書きで表示するため</td><td>ブラウザ内のメモリ上でのみ処理し、保存・送信しません。サイドパネルを閉じるか、別の文書に移ると破棄されます</td></tr>
+  <tr><td>Google ドキュメント上でキー入力・貼り付けなどの操作が「あった」という事実</td><td>文書の更新を検知して、縦書き表示を最新にするため</td><td>どのキーが押されたか、何が入力されたかは読み取りません。操作があったことだけを使います</td></tr>
+</table>
+<p>文書の本文は、お使いの Google アカウントでログインしているブラウザの権限で、その文書を開いているタブから <code>docs.google.com</code> に対して取得します（Google ドキュメントの「HTML としてダウンロード」と同じ仕組みです）。本拡張機能は文書を読み取るだけで、変更しません。</p>
+
+<h3>保存する情報</h3>
+<p>次の画面設定を、お使いのブラウザの拡張機能用の保存領域（<code>chrome.storage.local</code>）に保存します。ブラウザの外には出ません。拡張機能を削除すると、これらも削除されます。</p>
+<ul>
+  <li>用紙の種類、1行の字数、1枚の行数</li>
+  <li>書体、用紙の色、表示サイズ</li>
+  <li>罫線・ルビ・縦中横・自動スクロールなどのオン／オフ</li>
+</ul>
+
+<h3>外部への通信</h3>
+<p>本拡張機能が通信するのは、文書を取得するための <code>docs.google.com</code>（Google）だけです。提供者のサーバーは存在せず、本拡張機能から提供者や第三者へ情報を送ることはありません。</p>
+
+<h3>権限について</h3>
+<table>
+  <tr><th>権限</th><th>使う理由</th></tr>
+  <tr><td>サイドパネル（<code>sidePanel</code>）</td><td>縦書き表示を、Google ドキュメントの横のサイドパネルに出すため</td></tr>
+  <tr><td>ストレージ（<code>storage</code>）</td><td>画面設定を保存するため</td></tr>
+  <tr><td>スクリプトの挿入（<code>scripting</code>）</td><td>拡張機能をインストールする前から開いていた Google ドキュメントのタブにも、再読み込みなしで対応するため</td></tr>
+  <tr><td><code>docs.google.com/document/*</code> へのアクセス</td><td>開いている文書の本文を取得し、操作の有無を検知するため</td></tr>
+</table>
+
+<h3>第三者への提供・販売</h3>
+<p>利用者の情報を第三者に販売、貸与、提供することはありません。広告の目的や、信用の判断、融資の目的で利用することもありません。</p>
+
+<h3>ポリシーの変更</h3>
+<p>本ポリシーを変更するときは、このページを更新し、更新日を改めます。</p>
+
+<h3>お問い合わせ</h3>
+<p>ロケット団合同会社 — GitHub の Issues: <a href="https://github.com/nishigaki-source/tategaki-support/issues">https://github.com/nishigaki-source/tategaki-support/issues</a></p>
+</section>
+
+<section id="en" lang="en">
+<h2>English</h2>
+<p>"縦書き for Google ドキュメント" (the "Extension") is a Chrome extension that shows a Google Docs document in vertical Japanese writing (tategaki) on manuscript paper in the side panel. This policy explains what information the Extension handles and how it is used.</p>
+<p>Provider: Rocket Dang LLC (ロケット団合同会社)</p>
+
+<h3>Summary</h3>
+<ul>
+  <li>Document content is processed only inside your browser. <strong>It is never sent to the provider's servers or to any third party.</strong></li>
+  <li>There is no analytics, advertising or tracking.</li>
+  <li>The only thing stored is your display settings (paper type, font, etc.). Document content is not stored.</li>
+</ul>
+
+<h3>What the Extension reads</h3>
+<table>
+  <tr><th>Information</th><th>Purpose</th><th>Handling</th></tr>
+  <tr><td>Text and title of the Google Docs document you have open</td><td>To display it in vertical writing</td><td>Processed in browser memory only; never stored or sent. Discarded when you close the side panel or switch to another document</td></tr>
+  <tr><td>The fact that a key press, paste, etc. happened on the Google Docs page</td><td>To detect that the document changed and keep the view up to date</td><td>The Extension does not read which keys were pressed or what was typed; it uses only the fact that an action happened</td></tr>
+</table>
+<p>The document text is fetched from <code>docs.google.com</code> by the tab that has the document open, using your browser's existing Google sign-in (the same mechanism as Google Docs' "Download as HTML"). The Extension only reads the document and never modifies it.</p>
+
+<h3>What is stored</h3>
+<p>The following display settings are stored in the browser's extension storage (<code>chrome.storage.local</code>). They never leave your browser and are removed when you uninstall the Extension.</p>
+<ul>
+  <li>Paper type, characters per line, lines per sheet</li>
+  <li>Font, paper color, display size</li>
+  <li>On/off switches such as grid lines, ruby, tate-chu-yoko and auto-scroll</li>
+</ul>
+
+<h3>Network access</h3>
+<p>The only server the Extension talks to is <code>docs.google.com</code> (Google), to fetch the document. The provider operates no server for this Extension, and the Extension sends nothing to the provider or to any third party.</p>
+
+<h3>Permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Why it is needed</th></tr>
+  <tr><td><code>sidePanel</code></td><td>To show the vertical-writing view in the side panel next to the document</td></tr>
+  <tr><td><code>storage</code></td><td>To save display settings</td></tr>
+  <tr><td><code>scripting</code></td><td>To support Google Docs tabs that were already open before installation, without a reload</td></tr>
+  <tr><td>Access to <code>docs.google.com/document/*</code></td><td>To read the open document's content and detect edits</td></tr>
+</table>
+
+<h3>Sharing and sale</h3>
+<p>We do not sell, rent or provide user information to third parties, and we do not use it for advertising or for credit or lending decisions.</p>
+
+<h3>Changes to this policy</h3>
+<p>If this policy changes, this page will be updated together with the "Last updated" date.</p>
+
+<h3>Contact</h3>
+<p>Rocket Dang LLC — GitHub Issues: <a href="https://github.com/nishigaki-source/tategaki-support/issues">https://github.com/nishigaki-source/tategaki-support/issues</a></p>
+</section>
+
+</main>
+</body>
+</html>
